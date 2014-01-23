@@ -1,0 +1,10 @@
+Rossola nera is a red Italian wine grape variety that has been growing in the Valtellina region of Lombardy since at least the 17th century. In 2004 DNA profiling determined that the grape has a parent-offspring relationship with the Piedmont wine grape Nebbiolo though which variety is the parent and which is the offspring is not yet clear. However, most ampelographers believe that Nebbiolo is likely the parent variety since written records in Piedmont have noted Nebbiolo being grown since at least the 13th century.
+
+
+
+						<ol class="carousel-indicators-top">
+							<a class="left carousel-control" href="#myCarousel:" data-slide="prev">&#9650</a>
+						</ol>
+					<ol class="carousel-indicators" style= "right:50%; top:auto; bottom: 0px; margin-right: -19px;">
+						<a class="right carousel-control" href="#myCarousel" data-slide="next">&#9660</a>
+					</ol>
