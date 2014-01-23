@@ -8,31 +8,3 @@ Rossola nera is a red Italian wine grape variety that has been growing in the Va
 					<ol class="carousel-indicators" style= "right:50%; top:auto; bottom: 0px; margin-right: -19px;">
 						<a class="right carousel-control" href="#myCarousel" data-slide="next">&#9660</a>
 					</ol>
-
-
-
-
-
-					$dir = opendir("C:/saesite/rosterview/img/");
-
-while (($file = readdir($dir)) !== false)
-	{
-		if(substr( $file, -3) == "jpg")
-
-		{
-			echo "<div  id = 'pic-load'><img class = 'bioPic' src='C:/saesite/rosterview/img/picLoad.gif'
-					data-original='C:/saesite/rosterview/img/" . $file . "' width= '100%' height='100%'></div>";
-
-					//echo "<br />";
-
-		}
-	}
-
-
-
-
-
-
-
-
-	<img id="currRos" src="img/rosterframe_final.jpg" alt="Image"></img>
