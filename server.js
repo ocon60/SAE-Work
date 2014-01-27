@@ -4,6 +4,6 @@ var express = require('express'),
 
 app.use(express.static(__dirname + '/rosterview'));
 
-app.listen(process.env.PORT || 5000);
+app.listen(process.env.PORT || 8080);
 
-console.log("App listening on port 5000");
+console.log("App listening on port 8080");
