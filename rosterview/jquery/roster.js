@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
 //-----------Darken DIV on mouseenter, lighten on mouseout--------//
-//#roster-frame
+//----------------------#roster-frame-----------------------------//
 $("#roster-frame").on("mouseenter",function() {
     $(this).fadeTo("fast", 0.9, function() {
         console.log("roster-frame darkened to 1.0");
@@ -12,7 +12,7 @@ $("#roster-frame").on("mouseout",function() {
         console.log("roster-frame lightened back to 0.5");
     });
 });
-//#infopane-container
+//---------------#infopane-container--------------------------------//
 $("#infopane-container").on("mouseenter",function() {
     $("#bio-container").fadeTo("fast",0.9,function() {
         console.log("bio-container darkened to 1.0")
@@ -35,15 +35,15 @@ $("#infopane-container").on("mouseout",function() {
         console.log("links-container lightened back to 0.5");
     });
 });
-//------Shadow on mouseenter, disappear on mouseout----//
-//#roster-frame
+//------Shadow on mouseenter, disappear on mouseout-------------//
+//-------------------#roster-frame------------------------------//
 $("#roster-frame").on("mouseenter", function() {
-    $(this).css("box-shadow", "15px 15px 10px #0c0c0c");
+    $(this).css("box-shadow", "15px 15px 10px #060606");
 });
 $("#roster-frame").on("mouseout", function() {
     $(this).css("box-shadow", "none");
 });
-//#infopane-container
+//-----------------#infopane-container--------------------------//
 $("#infopane-container").on("mouseenter",function() {
     $("#bio-container").css("box-shadow", "15px 15px 10px #060606");
     $("#pic-container").css("box-shadow", "15px 15px 10px #060606");
@@ -54,6 +54,12 @@ $("#infopane-container").on("mouseout",function() {
     $("#pic-container").css("box-shadow", "none");
     $("#links-container").css("box-shadow", "none");
 });
-
+//------Reveal infopane sections on mouseenter, disappear on mouseout----//
+$("#infopane-container").on("mouseenter",function() {
+    $("#thepicture").css("visibility", "visible");
+    $("#theinfo").css("visibility", "visible");
+    $("#pic-container").css("box-shadow", "15px 15px 10px #060606");
+    $("#links-container").css("box-shadow", "15px 15px 10px #060606");
+});
 
 });
