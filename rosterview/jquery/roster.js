@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-//-----------Darken DIV on mouseenter, lighten on mouseout--------//
+//-----------Darken DIV on mouseenter, lighten on mouseout========//
 //----------------------#roster-frame-----------------------------//
 $("#roster-frame").on("mouseenter",function() {
     $(this).fadeTo("fast", 0.9, function() {
@@ -35,7 +35,7 @@ $("#infopane-container").on("mouseout",function() {
         console.log("links-container lightened back to 0.5");
     });
 });
-//------Shadow on mouseenter, disappear on mouseout-------------//
+//======Shadow on mouseenter, disappear on mouseout=============//
 //-------------------#roster-frame------------------------------//
 $("#roster-frame").on("mouseenter", function() {
     $(this).css("box-shadow", "15px 15px 10px #060606");
@@ -54,26 +54,30 @@ $("#infopane-container").on("mouseout",function() {
     $("#pic-container").css("box-shadow", "none");
     $("#links-container").css("box-shadow", "none");
 });
-//------Reveal infopane sections on mouseenter, disappear on mouseout----//
+//======Reveal infopane sections on mouseenter, disappear on mouseout====//
 $("#infopane-container").on("mouseenter",function() {
     $("#thepicture").css("visibility", "visible");
     $("#theinfo").css("visibility", "visible");
     $("#pic-container").css("box-shadow", "15px 15px 10px #060606");
     $("#links-container").css("box-shadow", "15px 15px 10px #060606");
 });
-//--------Resize elements to fit a laptop resolution----------------------//
-//------------------#roster-frame-----------------------------------------//
+//===============Resize elements to fit a laptop resolution===============//
 var windH = $(window).height();
 var windL = $(window).width();
-
+//------------------#roster-frame-----------------------------------------//
 if (windH <= 700 && windL <= 1300) {
-	function() {
 	$("#roster-frame").css("margin-top", "100px");
 	$("#roster-frame").css("margin-left", "30px");
 	$("#roster-frame").css("margin-bottom", "20px");
 	$("#roster-frame").css("height", "65%");
 
-};
-};
-
+//------------------#infopane-container and children----------------------//
+	$("#infopane-container").css("margin-top", "100px");
+	$("#infopane-container").css("height", "80%");
+	$("#pic-container").css("margin-right", "30px");
+	$("#theinfo").css("width", "50%");
+	$("#bio-container").css("margin-right", "30px");
+	$("#links-container").css("margin-right", "30px");
+	$("#links-container").css("width", "85%");
+};	
 });
