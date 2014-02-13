@@ -61,5 +61,19 @@ $("#infopane-container").on("mouseenter",function() {
     $("#pic-container").css("box-shadow", "15px 15px 10px #060606");
     $("#links-container").css("box-shadow", "15px 15px 10px #060606");
 });
+//--------Resize elements to fit a laptop resolution----------------------//
+//------------------#roster-frame-----------------------------------------//
+var windH = $(window).height();
+var windL = $(window).width();
+
+if (windH <= 700 && windL <= 1300) {
+	function() {
+	$("#roster-frame").css("margin-top", "100px");
+	$("#roster-frame").css("margin-left", "30px");
+	$("#roster-frame").css("margin-bottom", "20px");
+	$("#roster-frame").css("height", "65%");
+
+};
+};
 
 });
