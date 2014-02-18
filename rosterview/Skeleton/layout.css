@@ -164,6 +164,10 @@ body {
 	visibility: hidden;
 }
 
+.linkbutton {
+	text-align:center;
+}
+
 /* #Media Queries
 ================================================== */
 
