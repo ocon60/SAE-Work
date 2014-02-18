@@ -13,7 +13,7 @@ console.log("Date: "+d.getFullYear()+"-"+(d.getMonth()+1)+"-"+d.getDay()+" "+d.g
  var pg = require('pg');
 
 pg.connect(process.env.DATABASE_URL, function(err ,client) {
-	var query = client.query('SELECT * FROM rostertable');
+	var query = client.query('SELECT * FROM d454hdqpfimhl9.rostertable');
 	
 	query.on('row', function(row) {
 		console.log(JSON.stringify(row));
