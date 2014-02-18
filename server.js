@@ -10,7 +10,7 @@ console.log("App listening on port 5000");
 var d = new Date();
 console.log("Date: "+d.getFullYear()+"-"+(d.getMonth()+1)+"-"+d.getDay()+" "+d.get);
 
-var pg = require('pg');
+/* var pg = require('pg');
 
 pg.connect(process.env.DATABASE_URL, function(err ,client) {
 	var query = client.query('SELECT * FROM rostertable');
@@ -19,4 +19,4 @@ pg.connect(process.env.DATABASE_URL, function(err ,client) {
 		console.log(JSON.stringify(row));
 		
 	});
-});
+}); */

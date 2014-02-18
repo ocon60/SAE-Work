@@ -1,6 +1,6 @@
 {
   "name": "rosterview",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "JSON package for rosterview",
   "main": "server.js",
   "scripts": {
@@ -24,7 +24,6 @@
   },
   "homepage": "https://github.com/ocon60/SAE-Work",
   "dependencies": {
-	"pg": "0.6.15",
     "logfmt": "~0.18.1",
     "express": "~3.4.8"
   }
