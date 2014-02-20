@@ -4,7 +4,6 @@ var express = require('express'),
 	app = express();
 	port = parseInt(process.env.PORT, 10)|| 5000;
 
-app.use(app.router);
 app.get("/", function(req,res) {
 	res.redirect("rosterview/index.html");	
 });
@@ -17,7 +16,7 @@ app.configure(function(){
     dumpExceptions: true, 
     showStack: true
   }));
-  
+ app.use(app.router); 
 });
 
 app.listen(port);
