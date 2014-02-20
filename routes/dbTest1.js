@@ -9,7 +9,4 @@ testClient.connect();
 
 var testQuery = testClient.query("SHOW TABLES", function(err, result) {
 	console.log(result);
-})
-
-
-
+});
