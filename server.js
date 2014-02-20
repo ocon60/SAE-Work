@@ -4,8 +4,11 @@ var express = require('express'),
 	app = express();
 	port = parseInt(process.env.PORT, 10)|| 8080;
 
+app.set('views', __dirname + '/rosterview');
+app.engine('html', require('ejs').renderFile);
+
 app.get("/", function(req,res) {
-	res.render("rosterview/index.html");	
+	res.render("index.html");	
 });
 
 app.configure(function(){
