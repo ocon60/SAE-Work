@@ -2,10 +2,10 @@
 
 var express = require('express'),
 	app = express();
-	port = parseInt(process.env.PORT, 10)|| 5000;
+	port = parseInt(process.env.PORT, 10)|| 8080;
 
 app.get("/", function(req,res) {
-	res.redirect("rosterview/index.html");	
+	res.render("rosterview/index.html");	
 });
 
 app.configure(function(){
