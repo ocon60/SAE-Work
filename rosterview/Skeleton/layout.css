@@ -95,7 +95,7 @@ body {
 
 #theinfo {
 	padding:5px;
-	float:right;
+	/*float:right;*/
 	width:55%;
 	height:90%;
 	background-color: #191919;
